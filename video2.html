@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Video 2</title>
+
+	<script>
+    var myVideo = document.getElementById("change");
+
+function playPause() {
+    if (change.paused)
+        change.play();
+    else
+        change.pause();
+}
+
+function stop() {
+    change.pause();
+    change.currentTime = 0; 
+}
+
+function enableMute() {
+    change.muted = true;
+}
+
+function disableMute() {
+    change.muted = false;
+}
+
+</script>
+</head>
+<body>
+
+<div style="text-align:center">
+		<button onclick="playPause()">Play/Pause</button>
+		<button onclick="stop()">Stop</button>
+		<button onclick="enableMute()" type="button">Mute sound</button>
+		<button onclick="disableMute()" type="button">Enable sound</button>
+  		<br><br>
+	<video ="560" height= "315" id = "change">
+  <source src ="change.mp4" type ="video/mp4" codecs= "avc1.4D401E, mp4a. 40.2" />
+  <source src="change.ogv" type="video/ogg" codecs =" vp8, vorbis"/>
+  <source src="change.webm" type="video/webm" codecs =" theora, vorbis">
+  		Update your browser to see this content.
+	</video>
+</div>
+
+
+
+</body>
+</html>

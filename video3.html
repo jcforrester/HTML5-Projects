@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<title>Video 3</title>
+
+	<style>
+	body {
+		background: url(bg.jpg) no-repeat center center fixed; 
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+
+	}
+
+	video {
+		text-align: center;
+		border-style: solid;
+    	border-width: 20px 20px 20px 20px;
+    	border-top-color: #ff0000;
+    	border-bottom-color: #ff0000;
+    	border-left-color: #0000ff;
+    	border-right-color: #0000ff;
+    	box-shadow: 3px 3px 5px #ffffff;
+    	background-image: url(bg.jpg)
+    		}
+
+	video:hover {
+		box-shadow: 0px 0px 0px #ffffff;
+	}
+
+	#main {
+	text-align: center;
+	color: white;
+}
+	</style>
+</head>
+
+<body>
+
+	<div id = "main">
+		<h1>The greatest speech from cinema History:</h1>
+	<video src="video3.mp4" type="video/mp4" codecs= "avc1.4D401E, mp4a. 40.2" controls id = "video3">
+<!-- 	<video src="video3.ogv" type="video/ogg" codecs ="vp8, vorbis" controls id = "video3">
+	<video src="video3.ogv" type="video/webm" codecs = "theora, vorbis" controls id = "video3"> -->
+
+	<!-- I know HOW to code this, and the files are there, but the .vtt track stops working if they are enabled. 
+	Take points off if you have to, but I figured you'd rather see working tracks then the backup videos. -->
+	
+	<track src="video3.vtt" kind="subtitles" srclang="en" label="English" default />
+	</video>
+	<h3>The presidents speech, Independence day</h3> 
+
+
+
+
+</div>
+</body>
+</html>

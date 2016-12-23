@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Audio 2</title>
+
+<script>
+var myAudio = document.getElementById("heart");
+
+function heartPlayPause() {
+    if (heart.paused)
+        heart.play();
+    else
+        heart.pause();
+}
+
+function heartStop() {
+    heart.pause();
+    heart.currentTime = 0; 
+}
+
+</script>
+
+	<style> 
+		#background {
+					display: none;
+					} 
+	</style>
+
+</head>
+<body>
+	<h1>Audio 2!</h1>
+
+<audio id = "heart" >
+  <source src = "heart.mp3" type = "audio/mp3">
+		<source src = "heart.ogg" type = "audio/ogg">
+</audio>
+  <button onclick="heartPlayPause()">Play/Pause</button>
+  <button onclick="heartStop()">Stop</button>
+  <br><br>
+
+</body>
+</html>

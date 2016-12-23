@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Canvas 1</title>
+	</head>
+<body>
+
+<h2>You said surprise you...and I've been told I'm a smart alec. :)</h2>
+<canvas id="surprise" width="500" height="100" style="border:1px solid #d3d3d3;">
+</canvas>
+
+<script>
+	var c = document.getElementById("surprise");
+	var ctx = c.getContext("2d");
+	ctx.font = "75px Arial";
+	ctx.fillText("Surprise Me",40,70);
+</script>
+
+</body>
+</html>
